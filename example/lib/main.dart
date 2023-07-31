@@ -76,6 +76,7 @@ class _HtmlEditorExampleState extends State<HtmlEditorExample> {
                 htmlToolbarOptions: HtmlToolbarOptions(
                   toolbarPosition: ToolbarPosition.aboveEditor, //by default
                   toolbarType: ToolbarType.nativeScrollable, //by default
+                   defaultToolbarButtons: [FontButtons()],
                   onButtonPressed:
                       (ButtonType type, bool? status, Function? updateStatus) {
                     print(
